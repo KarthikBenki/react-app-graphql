@@ -22,12 +22,13 @@ function Books() {
     <div style={{border:"1px solid black"}}>{
         books.map(({id,title,desc,author,pages,price})=>{
             return (
-             <div style={{border:"1px solid black",margin:"10px"}} key={id}>
-                 <h1>{title}</h1>
-                 <p>{desc}</p>
-                 <p>{author}</p>
-                 <p>{pages}</p>
-                 <p>{price}</p>
+             <div style={{border:"1px solid black",margin:"10px",padding:"20px"}} key={id}>
+                  <h2>Book Details {id}</h2>
+                  <p>Title: {title}</p>
+                  <p>Description: {desc}</p>
+                  <p>price: {price}</p>
+                  <p>pages: {pages}</p>
+                  <p>author: {author}</p>
              </div>
             )
          })
