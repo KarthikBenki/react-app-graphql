@@ -8,6 +8,21 @@ export const GET_ALL_BOOKS = gql`
          desc
          pages
          author
+         price
       }
    }
+`;
+
+
+export const GET_BOOK = gql`
+  query GetBook($bookId: Int!) {
+    getBook(bookId: $bookId) {
+      title
+      id
+      desc
+      pages
+      author
+      price
+    }
+  }
 `;
