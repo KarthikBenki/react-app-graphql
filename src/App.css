@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+/* form css */
+.submit-button{
+  color: white;
+  background-color: green;
+}
+
+.form-container{
+  border: 1px solid black;
+  padding: 20px;
+  max-width: 340px;
+  min-width: 340px;
+  background-color: antiquewhite;
+}
+
+.form-container h2{
+  background-color: yellow;
+  text-align: center;
+}
+.form-input{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-input input{
+  font-size: 20px;
+}
+
+
+

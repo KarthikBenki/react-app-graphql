@@ -27,44 +27,60 @@ const BookForm = () => {
   };
 
   return (
-    <div>
+    <div className='form-container'> 
       <h2>Create Book</h2>
       <form onSubmit={handleSubmit}>
+        <div className='form-input'>
+
+       
+       <label htmlFor="">Title: </label>
         <input
           type="text"
           placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <br />
+         </div>
+        <div className='form-input'>
+
+        <label htmlFor="">Description: </label>
         <textarea
           placeholder="Description"
           value={desc}
           onChange={(e) => setDesc(e.target.value)}
         />
-        <br />
+        </div>
+        <div className='form-input'>
+
+        <label htmlFor="">Author: </label>
         <input
           type="text"
           placeholder="Author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <br />
+        </div>
+        <div className='form-input'>
+
+        <label htmlFor="">Price: </label>
         <input
           type="number"
           placeholder="Price"
           value={price}
           onChange={(e) => setPrice(parseInt(e.target.value))}
         />
-        <br />
+        </div>
+        <div className='form-input'>
+
+        <label htmlFor="">Pages: </label>
         <input
           type="number"
           placeholder="Pages"
           value={pages}
           onChange={(e) => setPages(parseInt(e.target.value))}
         />
-        <br />
-        <button type="submit" disabled={loading}>
+        </div>
+        <button className='submit-button' type="submit" disabled={loading}>
           {loading ? 'Creating...' : 'Create Book'}
         </button>
       </form>
