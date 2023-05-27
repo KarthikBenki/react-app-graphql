@@ -3,6 +3,7 @@ import React from 'react'
 import { GET_ALL_BOOKS } from './graphql/query';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import './Books.css'
 
 function Books() {
     const { loading, error, data } = useQuery(GET_ALL_BOOKS);
@@ -19,10 +20,10 @@ function Books() {
  
 
   return(
-    <div style={{border:"1px solid black"}}>{
+    <div className='books-container' style={{border:"1px solid black"}}>{
         books.map(({id,title,desc,author,pages,price})=>{
             return (
-             <div style={{border:"1px solid black",margin:"10px",padding:"20px"}} key={id}>
+             <div className='book-container' style={{border:"1px solid black",margin:"10px",padding:"20px"}} key={id}>
                   <h2>Book Details {id}</h2>
                   <p>Title: {title}</p>
                   <p>Description: {desc}</p>

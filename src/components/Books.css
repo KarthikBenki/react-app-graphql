@@ -1,0 +1,11 @@
+.books-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.book-container{
+    background-color: aquamarine;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
